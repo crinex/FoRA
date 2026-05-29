@@ -1,10 +1,10 @@
-# peft-fora
+# FoRA
 This code is the official implementation of the following paper: [FoRA: Fisher-orthogonal Rank Adaptation for Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2605.29317)
 We integrated into the HuggingFace PEFT ecosystem.
 
 FoRA is a parameter-efficient fine-tuning method that combines:
-1. **Fisher-based layer selection** — a one-time forward-backward pass identifies the top-K most task-relevant transformer layers
-2. **Stiefel-constrained LoRA** — `lora_B` is trained on the Stiefel manifold via CayleyAdam, preserving the singular-value spectrum of the adapter update
+1. **Fisher-based layer selection**: a one-time forward-backward pass identifies the top-K most task-relevant transformer layers
+2. **Stiefel-constrained LoRA**: `lora_B` is trained on the Stiefel manifold via CayleyAdam, preserving the singular-value spectrum of the adapter update
 
 ## Installation
 
